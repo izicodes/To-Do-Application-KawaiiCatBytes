@@ -1,0 +1,16 @@
+{% extends 'content-wrapper.html' %} 
+
+{% block title %} Profile | KawaiiCatBytes {% endblock %} 
+
+{% block content %}
+
+<div class="row1" id="profileRow1">
+  <h2>{{ user.username}}'s profile</h2>
+
+  <form action="{% url 'logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit" title="Log out">Log out</button>
+  </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,1 @@
+SECRET_KEY = 'django-insecure-turvkql-scyux&vy8ss%=j&mjnqz*kt1xog2=e_i&fio-uehlv'

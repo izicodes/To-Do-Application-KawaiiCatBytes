@@ -1,0 +1,252 @@
+/* Important */
+@font-face {
+  font-family: "ms gothic";
+  src: url("MS Gothic.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "ms gothic", monospace;
+}
+
+body {
+  cursor: url(https://cur.cursors-4u.net/others/oth-8/oth710.cur), auto !important;
+  color: rgb(52, 48, 48);
+  font-size: 15px;
+}
+
+/* The hover states */
+nav a:hover,
+button:hover,
+.row1 a:hover,
+.row1 a:active,
+#SignUpRowInput:hover,
+#SignUpRowInput:active {
+  cursor: url(https://cur.cursors-4u.net/others/oth-8/oth710.cur), auto;
+}
+
+/* NavBar */
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  list-style: none;
+  height: 35px;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #a2a2a2;
+  background-color: white;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(52, 48, 48);
+  font-weight: bold;
+}
+nav a:hover,
+nav a:active {
+  color: #faa0af;
+}
+
+/*  */
+.pattern-cross-dots-lg {
+  background-color: white !important;
+  color: pink;
+}
+
+.wrapper {
+  height: calc(100vh - 35px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pattern-diagonal-stripes-sm {
+  background-color: white !important;
+  color: #ffc0d4;
+  border: 1px solid #a2a2a2;
+  width: 400px;
+  max-width: 400px;
+}
+
+.container {
+  color: rgb(65, 62, 62);
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  border: 1px solid #a2a2a2;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  width: 378px;
+  max-width: 380px;
+}
+
+.inputBox {
+  cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym746.cur), auto !important;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid #a2a2a2;
+  outline: none;
+}
+.inputBox:focus {
+  border-color: #faa0af;
+}
+
+li > .inputBox {
+  padding: 3px 5px;
+}
+
+/* BUTTON */
+button {
+  background: #ffc0d4;
+  background: -moz-linear-gradient(
+    0deg,
+    #ffc0d4 0%,
+    rgba(254, 250, 252, 1) 32%,
+    rgba(254, 249, 251, 1) 69%,
+    #ffc0d4 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    #ffc0d4 0%,
+    rgba(254, 250, 252, 1) 32%,
+    rgba(254, 249, 251, 1) 69%,
+    #ffc0d4 100%
+  );
+  background: linear-gradient(
+    0deg,
+    #ffc0d4 0%,
+    rgba(254, 250, 252, 1) 32%,
+    rgba(254, 249, 251, 1) 69%,
+    #ffc0d4 100%
+  );
+  padding: 4px 5px;
+  border-radius: 5px;
+  border: 1px solid #ef90ae;
+  font-family: "ms gothic", sans-serif;
+  font-size: 1em;
+  color: #e55482;
+  width: max-content;
+}
+
+button:hover,
+button:active {
+  background: -moz-linear-gradient(
+    0deg,
+    #fef9fb 0%,
+    #ffc0d4 32%,
+    #ffc0d4 69%,
+    #fef9fb 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    #fef9fb 0%,
+    #ffc0d4 32%,
+    #ffc0d4 69%,
+    #fef9fb 100%
+  );
+  background: linear-gradient(
+    0deg,
+    #fef9fb 0%,
+    #ffc0d4 32%,
+    #ffc0d4 69%,
+    #fef9fb 100%
+  );
+}
+
+.disabled-btn {
+  background: linear-gradient(
+    0deg,
+    #a2a2a2 0%,
+    rgba(254, 250, 252, 1) 32%,
+    rgba(254, 249, 251, 1) 69%,
+    #a2a2a2 100%
+  ) !important;
+  color: #494848;
+  border: 1px solid #706f6f;
+}
+
+/* ROWS */
+
+.row1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.row1 a {
+  color: #e55482;
+}
+.row1 a:hover,
+.row1 a:active {
+  color: #ffc0d4;
+}
+
+.row2 {
+  width: 100%;
+  background-color: white;
+}
+
+.row2 ul {
+  list-style: none;
+}
+
+.row2 li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px 5px 5px;
+}
+.row2 li:not(:last-child) {
+  border-bottom: 1px solid #a2a2a2;
+}
+.row2 .controls {
+  display: flex;
+}
+
+.row2 .controls i {
+  border-left: 1px solid #a2a2a2;
+  padding: 0 10px;
+}
+.row2 .controls i:hover {
+  color: #faa0af;
+}
+
+#loginRow1 .row,
+#SignUpRow .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.divider {
+  height: 1px;
+  margin: 5px auto;
+  background-color: #ffc0d4;
+  border: 1px solid transparent;
+  border-style: solid;
+  width: 30%;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+.aboutRow {
+  text-align: justify;
+}
+
+.homeRow {
+  display: flex;
+  flex-direction: row !important;
+  margin-top: 20px;
+}
