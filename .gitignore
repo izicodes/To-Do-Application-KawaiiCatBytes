@@ -45,3 +45,5 @@ __pycache__/
 # Ignore testing artifacts
 /.pytest_cache/
 /pytest.ini
+
+hello.html
