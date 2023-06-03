@@ -1,0 +1,12 @@
+<nav>
+  <ul>
+    <li><a href="{% url 'home' %}" title="Home">Home</a></li>
+    <li><a href="{% url 'about' %}" title="About">About</a></li>
+    <li><a href="{% url 'contact' %}" title="Contact">Contact</a></li>
+    {% if user.is_authenticated %}
+    <li><a href="{% url 'profile' %}" title="Profile">{{ user.username }}</a></li>
+    {% else %}
+    <li><a href="{% url 'login' %}" title="Login">Login</a></li>
+    {% endif %}
+  </ul>
+</nav>
