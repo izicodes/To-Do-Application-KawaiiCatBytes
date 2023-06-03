@@ -12,9 +12,6 @@
 # Logs
 *.log
 
-# Static files
-/myToDoProject/todo/static
-
 # Media files
 /myToDoProject/media/
 
@@ -25,6 +22,7 @@
 /.vscode/
 /.idea/
 /myToDoProject/.hintrc
+.hintrc
 
 # Compiled Python modules
 *.pyc
