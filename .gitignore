@@ -12,6 +12,12 @@
 # Logs
 *.log
 
+# Static files
+/myToDoProject/todo/static
+
+# Media files
+/myToDoProject/media/
+
 # Database
 /myToDoProject/*.sqlite3
 
