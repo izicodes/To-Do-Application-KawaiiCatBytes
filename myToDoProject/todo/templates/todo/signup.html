@@ -1,0 +1,52 @@
+{% extends 'content-wrapper.html' %} 
+
+{% block title %} Sign Up | KawaiiCatBytes {% endblock %} 
+
+{% block content %}
+<div class="row1" id="SignUpRow">
+  <hr class="divider" />
+  <form class="row" method="post" action="{% url 'signup' %}">
+    {% csrf_token %}
+
+    <label for="usernameSignUpBox"
+      >Enter a username:
+      <input
+        type="text"
+        id="usernameSignUpBox"
+        name="usernameSignUpBox"
+        title="Enter your username here"
+        placeholder="Enter a username here"
+        class="inputBox"
+        autocomplete="off"
+        required
+      />
+    </label>
+
+    <label for="passwordSignUpBox"
+      >Enter a password:
+      <input
+        type="password"
+        id="passwordSignUpBox"
+        name="passwordSignUpBox"
+        title="Enter password here"
+        placeholder="Enter a password here"
+        class="inputBox"
+        autocomplete="off"
+        required
+      />
+    </label>
+  
+
+  <hr class="divider" />
+
+  <label id="SignUpRowInput">
+    <input type="checkbox" required />
+    I agree to the terms and conditions
+  </label>
+
+  <p>Have an account already? <a href="{% url 'login' %}">Login</a></p>
+
+  <button type="submit" title="Sign Up">Sign Up</button>
+  </form>
+</div>
+{% endblock %}

@@ -4,10 +4,10 @@
 *.pyd
 
 # Caches
-# /myToDoProject/todo/__pycache__
-# /myToDoProject/myToDoProject/__pycache__
-# /myToDoProject/todo/*.pyc
-# /myToDoProject/myToDoProject/*.pyc
+/myToDoProject/todo/__pycache__
+/myToDoProject/myToDoProject/__pycache__
+/myToDoProject/todo/*.pyc
+/myToDoProject/myToDoProject/*.pyc
 
 # Logs
 *.log
